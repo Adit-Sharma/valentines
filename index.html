@@ -28,21 +28,21 @@
     .container {
       text-align: center;
       background: rgba(255, 240, 245, 0.92);
-      padding: 48px;
-      border-radius: 24px;
+      padding: 42px;
+      border-radius: 22px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.25);
       backdrop-filter: blur(5px);
-      max-width: 560px;
+      max-width: 520px;
+      width: 85%;
     }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
       color: #d6336c;
-      margin-bottom: 30px;
-      font-size: 35px; /* reduced slightly */
+      margin-bottom: 28px;
+      font-size: 32px;
       line-height: 1.35;
       font-weight: 600;
-      letter-spacing: 0.4px;
     }
 
     .buttons {
@@ -50,20 +50,19 @@
       gap: 20px;
       justify-content: center;
       position: relative;
-      height: 100px;
+      height: 90px;
     }
 
     button {
       border: none;
-      padding: 14px 32px;
-      font-size: 19px; /* reduced slightly */
+      padding: 12px 28px;
+      font-size: 18px;
       border-radius: 12px;
       cursor: pointer;
       transition: all 0.25s ease;
       position: absolute;
       font-family: 'Cormorant Garamond', serif;
       font-weight: 600;
-      letter-spacing: 0.5px;
     }
 
     #yesBtn {
@@ -85,7 +84,7 @@
     .rose {
       position: fixed;
       top: -50px;
-      font-size: 28px;
+      font-size: 26px;
       animation: fall 4s linear infinite;
       pointer-events: none;
     }
@@ -97,11 +96,39 @@
 
     .message {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 37px; /* reduced slightly */
+      font-size: 34px;
       color: #d6336c;
       display: none;
       font-weight: 700;
-      letter-spacing: 0.6px;
+    }
+
+    /* 📱 MOBILE OPTIMIZATION */
+    @media (max-width: 600px) {
+
+      .container {
+        padding: 28px;
+        border-radius: 18px;
+        max-width: 90%;
+      }
+
+      h1 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 22px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 10px 22px;
+      }
+
+      .message {
+        font-size: 26px;
+      }
+
+      .buttons {
+        height: 80px;
+      }
     }
   </style>
 </head>
